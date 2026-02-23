@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8719916243656731008}
   - component: {fileID: 2288044892389879251}
+  - component: {fileID: 453621279444879908}
   m_Layer: 0
   m_Name: Legs
   m_TagString: Untagged
@@ -91,6 +92,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &453621279444879908
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162533785219938081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3aa47d35b65414bceafda279a0a33738, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2540508414266202462
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,9 +214,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7372636246659013261}
+  - component: {fileID: 3784808408966155084}
+  - component: {fileID: 696657092101680021}
+  - component: {fileID: 3222826452717805539}
+  - component: {fileID: 4725516020389845287}
+  - component: {fileID: 1367920524524716938}
   m_Layer: 0
   m_Name: DangoMushi
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,6 +242,91 @@ Transform:
   - {fileID: 3339606567582158542}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &3784808408966155084
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270927824908022664}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0.5
+  m_AngularDamping: 1
+  m_GravityScale: 0.5
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &696657092101680021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270927824908022664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6f127fa3148efa9b410f1fe99ecf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Presentation::Presentation.Movement.MoveInputController
+  moveInput: {fileID: 11400000, guid: 65161611ae4d54aa0961a4d296b314c4, type: 2}
+  rootTransform: {fileID: 7372636246659013261}
+  moveSpeed: 5
+--- !u!114 &3222826452717805539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270927824908022664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a30d4b4d0e5245519067ee4d27f7bdbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Presentation::Presentation.Animations.MoveAnimation
+  moveInput: {fileID: 11400000, guid: 65161611ae4d54aa0961a4d296b314c4, type: 2}
+  rootTransform: {fileID: 7372636246659013261}
+  animator: {fileID: 453621279444879908}
+--- !u!114 &4725516020389845287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270927824908022664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f6f2bc6bcf4a3a93456f4671da3b92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: TransformManagement::PyrasLab.TransformManagement.TransformVariableAssigner
+  transformVariable: {fileID: 11400000, guid: afea77316a8634f8ab5f284de021a530, type: 2}
+  target: {fileID: 7372636246659013261}
+--- !u!114 &1367920524524716938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270927824908022664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a69daf63e84679a525d7c33670498f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Presentation::Presentation.Player.PlayerHealthManager
+  playerHealthVariable: {fileID: 11400000, guid: 30225928a49234ee585463a281286f30, type: 2}
+  onPlayerDamaged: {fileID: 11400000, guid: 045e07320e4e847debd59f17cd445d6e, type: 2}
 --- !u!1 &3816569891151155773
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,9 +336,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3339606567582158542}
+  - component: {fileID: 7269539394428388063}
   m_Layer: 0
   m_Name: Base
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,3 +361,40 @@ Transform:
   - {fileID: 8719916243656731008}
   m_Father: {fileID: 7372636246659013261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &7269539394428388063
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816569891151155773}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 1.35}
+  m_Size: {x: 8.8, y: 4}
+  m_Direction: 1

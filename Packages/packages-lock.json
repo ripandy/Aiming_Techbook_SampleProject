@@ -62,6 +62,14 @@
         "com.ripandy.soar": "1.0.0"
       }
     },
+    "com.pyraslab.inputsystemhandler": {
+      "version": "file:./../../ModuleCollections/InputSystemHandler",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.ripandy.soar": "1.0.0"
+      }
+    },
     "com.pyraslab.modularscreens": {
       "version": "file:./../../ModuleCollections/ModularScreens",
       "depth": 0,
@@ -88,6 +96,16 @@
       "source": "local",
       "dependencies": {
         "com.cysharp.r3": "1.2.9",
+        "com.ripandy.soar": "1.0.0"
+      }
+    },
+    "com.pyraslab.transformmanagement": {
+      "version": "file:./../../ModuleCollections/TransformManagement",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.cysharp.r3": "1.2.9",
+        "com.cysharp.unitask": "2.5.10",
         "com.ripandy.soar": "1.0.0"
       }
     },
