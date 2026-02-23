@@ -1,0 +1,20 @@
+{
+  "name": "com.pyraslab.inputsystemhandler",
+  "displayName": "Input System Handler",
+  "author": {
+    "name": "Ripandy Adha"
+  },
+  "version": "1.0.0",
+  "unity": "6000.0",
+  "description": "SOAR's Input System Handler package for managing input in Unity projects",
+  "keywords": [
+    "SOAR"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://package.openupm.com"
+  },
+  "dependencies": {
+    "com.ripandy.soar": "1.0.0"
+  }
+}
