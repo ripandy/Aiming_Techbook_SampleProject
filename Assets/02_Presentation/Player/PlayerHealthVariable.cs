@@ -1,18 +1,9 @@
-using Domain.Player;
+using Domain.Interfaces;
 using Soar.Variables;
 using UnityEngine;
 
-namespace Presentation.Player
+namespace Presentation
 {
-    public class PlayerHealthVariable : Variable<int>
-    {
-        [SerializeField] private PlayerData playerData;
-        
-        public float Ratio => (float)Value / playerData.maxHP;
-
-        public void ResetHealth()
-        {
-            Value = playerData.maxHP;
-        }
-    }
+    [CreateAssetMenu(fileName = "PlayerHealthVariable", menuName = "Game/Variables/PlayerHealth")]
+    public class PlayerHealthVariable : Variable<HealthDto>, IHealthPresenter { }
 }

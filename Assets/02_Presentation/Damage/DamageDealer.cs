@@ -1,7 +1,7 @@
 using UnityEngine;
 using Soar.Events;
 
-namespace Presentation.Damage
+namespace Presentation
 {
     public class DamageDealer : MonoBehaviour
     {

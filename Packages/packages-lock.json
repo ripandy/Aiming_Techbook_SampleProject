@@ -158,7 +158,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "2.11.3",
+      "version": "2.11.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -301,7 +301,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.8.10",
+      "version": "1.8.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -322,7 +322,7 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.9.9",
+      "version": "1.9.10",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -330,6 +330,20 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "st.mewli.core": {
+      "version": "https://github.com/mewlist/MewCore.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a746905f30391e8500660a0594a03e642044fdb4"
+    },
+    "st.mewli.di": {
+      "version": "https://github.com/mewlist/Doinject.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "d70cb5dc49526df0840fa20575caf71f5c8fe045"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",

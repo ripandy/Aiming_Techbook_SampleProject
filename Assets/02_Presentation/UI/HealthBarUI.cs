@@ -1,5 +1,5 @@
 using System;
-using Presentation.Player;
+using Domain.Interfaces;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,13 +14,13 @@ namespace Presentation.UI
 
         private void Start()
         {
-            slider.value = playerHealthVariable.Ratio;
+            slider.value = playerHealthVariable.Value.Ratio;
             subscription = playerHealthVariable.Subscribe(UpdateHealthBar);
         }
 
-        private void UpdateHealthBar()
+        private void UpdateHealthBar(HealthDto health)
         {
-            slider.value = playerHealthVariable.Ratio;
+            slider.value = health.Ratio;
         }
 
         private void OnDestroy()

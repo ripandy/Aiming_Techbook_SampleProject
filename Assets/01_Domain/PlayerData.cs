@@ -1,6 +1,6 @@
 using System;
 
-namespace Domain.Player
+namespace Domain
 {
     [Serializable]
     public struct PlayerData

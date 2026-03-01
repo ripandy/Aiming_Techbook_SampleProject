@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8612005bac574d64a1be9f641beb274e, type: 3}
-  m_Name: PlayerHealthVariable
-  m_EditorClassIdentifier: Presentation::Presentation.Player.PlayerHealthVariable
-  value: 10
+  m_Script: {fileID: 11500000, guid: d620603d587714d1391f0cc5fda9acc6, type: 3}
+  m_Name: PlayerTransformVariable
+  m_EditorClassIdentifier: Soar.Base::Soar.Variables.TransformVariable
+  value: {fileID: 0}
   valueEventType: 0
   autoResetValue: 1
-  playerData:
-    maxHP: 10

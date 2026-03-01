@@ -218,7 +218,6 @@ GameObject:
   - component: {fileID: 696657092101680021}
   - component: {fileID: 3222826452717805539}
   - component: {fileID: 4725516020389845287}
-  - component: {fileID: 1367920524524716938}
   m_Layer: 0
   m_Name: DangoMushi
   m_TagString: Player
@@ -313,20 +312,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: TransformManagement::PyrasLab.TransformManagement.TransformVariableAssigner
   transformVariable: {fileID: 11400000, guid: afea77316a8634f8ab5f284de021a530, type: 2}
   target: {fileID: 7372636246659013261}
---- !u!114 &1367920524524716938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3270927824908022664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6a69daf63e84679a525d7c33670498f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Presentation::Presentation.Player.PlayerHealthManager
-  playerHealthVariable: {fileID: 11400000, guid: 30225928a49234ee585463a281286f30, type: 2}
-  onPlayerDamaged: {fileID: 11400000, guid: 045e07320e4e847debd59f17cd445d6e, type: 2}
 --- !u!1 &3816569891151155773
 GameObject:
   m_ObjectHideFlags: 0

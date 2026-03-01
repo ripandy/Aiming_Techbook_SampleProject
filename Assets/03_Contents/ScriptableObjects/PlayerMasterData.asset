@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d620603d587714d1391f0cc5fda9acc6, type: 3}
-  m_Name: DangoMushiTransformVariable
-  m_EditorClassIdentifier: Soar.Base::Soar.Variables.TransformVariable
-  value: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 9ad11050c7964aa3b375f8e07f2db8a0, type: 3}
+  m_Name: PlayerMasterData
+  m_EditorClassIdentifier: Presentation::Presentation.Player.PlayerMasterData
+  value:
+    maxHP: 10
   valueEventType: 0
   autoResetValue: 1

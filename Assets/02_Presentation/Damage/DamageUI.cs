@@ -4,7 +4,7 @@ using Soar.Events;
 using Soar.Variables;
 using UnityEngine;
 
-namespace Presentation.Damage
+namespace Presentation
 {
     public class DamageUI : MonoBehaviour
     {

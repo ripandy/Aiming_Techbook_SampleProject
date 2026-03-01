@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 483a348e9346a4d6895b7681bf9a1931, type: 3}
-  m_Name: PlayerDamagedEvent
-  m_EditorClassIdentifier: Soar.Base::Soar.Events.IntGameEvent
-  value: 0
+  m_Script: {fileID: 11500000, guid: 8612005bac574d64a1be9f641beb274e, type: 3}
+  m_Name: PlayerHealthVariable
+  m_EditorClassIdentifier: Presentation::Presentation.PlayerHealthVariable
+  value:
+    currentHP: 0
+    maxHP: 0
+  valueEventType: 0
+  autoResetValue: 1

@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc3fe2b0c4c38402c8972a08516628bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Presentation::Presentation.Animations.DamageDealer
-  onTargetDamaged: {fileID: 11400000, guid: 045e07320e4e847debd59f17cd445d6e, type: 2}
+  onTargetDamaged: {fileID: 11400000, guid: 5eb626c5f3a4e40128b7513f9f26b7a9, type: 2}
   damageAmount: 2
   targetTag: Player
 --- !u!1 &9136089861212585374
